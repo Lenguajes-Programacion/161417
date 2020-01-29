@@ -1,5 +1,6 @@
 # 161417
-Manuel Alejandro Gonzalez Carrillo
+# Manuel Alejandro Gonzalez Carrillo
+
 abstract    
 as 
 base 
@@ -81,7 +82,8 @@ volatile
 while
 
 
-Solucion en C#.-Un proyecto está incluido dentro de una solución. 
+# Solucion en C#.-
+Un proyecto está incluido dentro de una solución. 
 A pesar de su nombre, una solución no es una "respuesta", sino simplemente un contenedor con uno o más proyectos relacionados, 
 junto con información de compilación, la configuración de ventanas de Visual Studio y archivos varios que no estén asociados a un proyecto determinado. 
 Una solución se describe mediante un archivo de texto (extensión .sln) con su propio formato único; no está diseñada para modificarse de forma manual.
