@@ -29,7 +29,7 @@ namespace Practicados
             val1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Escribe el segundo numero");
             val2 = int.Parse(Console.ReadLine());
-
+            
             switch (op)
             {
                 case "+":
