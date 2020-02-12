@@ -11,9 +11,10 @@ namespace Practicados
         static void Main(string[] args)
         {
             bool close_app = true;
-            int val1, val2, res;
+            int val1, val2,res;
             float resdiv;
             string op;
+            float result = 0;
             while (close_app)
             {
                 Console.WriteLine("Que operación desea hacer?");
@@ -21,6 +22,7 @@ namespace Practicados
                 Console.WriteLine("(-) Resta");
                 Console.WriteLine("(*) Multiplicar");
                 Console.WriteLine("(/) Dividir");
+                Console.WriteLine("(r) Usar resultado anterior");
                 Console.WriteLine("(s) Salir");
                 op = Console.ReadLine();
 
@@ -33,17 +35,19 @@ namespace Practicados
                         Console.WriteLine("Escribe el segundo numero");
                         val2 = int.Parse(Console.ReadLine());
                         res = val1 + val2;
+                        result = res;
                         Console.WriteLine(res);
                         break;
                     case "-":
-                        Console.WriteLine("Resta");//Detectar tipo de operador  
+                        Console.WriteLine("Resta");
                         Console.WriteLine("Escribe el primer numero");
                         val1 = int.Parse(Console.ReadLine());
                         Console.WriteLine("Escribe el segundo numero");
                         val2 = int.Parse(Console.ReadLine());
                         res = val1 - val2;
+                        result = res;
                         Console.WriteLine(res);
-                    break;
+                        break;
                     case "*":
                         Console.WriteLine("Multiplicar");//Detectar tipo de operador
                         Console.WriteLine("Escribe el primer numero");
@@ -51,8 +55,9 @@ namespace Practicados
                         Console.WriteLine("Escribe el segundo numero");
                         val2 = int.Parse(Console.ReadLine());
                         res = val1 * val2;
+                        result = res;
                         Console.WriteLine(res);
-                    break;
+                        break;
                     case "/":
                         Console.WriteLine("Dividir");//Detectar tipo de operador  
                         Console.WriteLine("Escribe el primer numero");
@@ -60,13 +65,14 @@ namespace Practicados
                         Console.WriteLine("Escribe el segundo numero");
                         val2 = int.Parse(Console.ReadLine());
                         resdiv = val1 / val2;
+                        result = resdiv;
                         Console.WriteLine(resdiv);
-                    break;
+                        break;
                     case "s":
                         Console.WriteLine("Salir");//Detectar tipo de operador
                         Console.WriteLine("Adios, No olvides tomar aguita :D <3");
                         close_app = false;
-                    break;
+                        break;
                 }
             }
         }
