@@ -10,12 +10,13 @@ namespace Practicados
         //Responder resultado en (int)
         static void Main(string[] args)
         {
-            bool close_app = true;
+            string close = null;
+            string resant = null;
             int val1, val2,res;
             float resdiv;
             string op;
             float result = 0;
-            while (close_app)
+            do
             {
                 Console.WriteLine("Que operación desea hacer?");
                 Console.WriteLine("(+) Suma");
@@ -23,7 +24,6 @@ namespace Practicados
                 Console.WriteLine("(*) Multiplicar");
                 Console.WriteLine("(/) Dividir");
                 Console.WriteLine("(r) Usar resultado anterior");
-                Console.WriteLine("(s) Salir");
                 op = Console.ReadLine();
 
                 switch (op)
@@ -37,6 +37,16 @@ namespace Practicados
                         res = val1 + val2;
                         result = res;
                         Console.WriteLine(res);
+                        Console.WriteLine("Desea utilizar el resultado anterior?");                     
+                        resant = Console.ReadLine();
+                        if (resant == "no")
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Escribe el valor a sumar");
+                        val1 = int.Parse(Console.ReadLine());
+                        res = val1 + res;
+                        Console.WriteLine(res);
                         break;
                     case "-":
                         Console.WriteLine("Resta");
@@ -46,6 +56,17 @@ namespace Practicados
                         val2 = int.Parse(Console.ReadLine());
                         res = val1 - val2;
                         result = res;
+                        Console.WriteLine(res);
+                        Console.WriteLine(res);
+                        Console.WriteLine("Desea utilizar el resultado anterior?");
+                        resant = Console.ReadLine();
+                        if (resant == "no")
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Escribe el valor a restar");
+                        val1 = int.Parse(Console.ReadLine());
+                        res = val1- res;
                         Console.WriteLine(res);
                         break;
                     case "*":
@@ -57,6 +78,17 @@ namespace Practicados
                         res = val1 * val2;
                         result = res;
                         Console.WriteLine(res);
+                        Console.WriteLine(res);
+                        Console.WriteLine("Desea utilizar el resultado anterior?");
+                        resant = Console.ReadLine();
+                        if (resant == "no")
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Escribe el valor a Multiplicar"); 
+                        val1 = int.Parse(Console.ReadLine());
+                        res = val1 * res;
+                        Console.WriteLine(res);
                         break;
                     case "/":
                         Console.WriteLine("Dividir");//Detectar tipo de operador  
@@ -67,14 +99,25 @@ namespace Practicados
                         resdiv = val1 / val2;
                         result = resdiv;
                         Console.WriteLine(resdiv);
-                        break;
-                    case "s":
-                        Console.WriteLine("Salir");//Detectar tipo de operador
-                        Console.WriteLine("Adios, No olvides tomar aguita :D <3");
-                        close_app = false;
+                        Console.WriteLine("Desea utilizar el resultado anterior?");
+                        resant = Console.ReadLine();
+                        if (resant == "no")
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Escribe el valor a sumar");
+                        val1 = int.Parse(Console.ReadLine());
+                        resdiv = val1 / resdiv;
+                        Console.WriteLine(resdiv);
                         break;
                 }
+                Console.WriteLine("Desea volver a usar la calculadora?");
+                close = Console.ReadLine();
+            } while (close == "si");
+            if(close == "no") {
+                Console.WriteLine("Gracias por usar la calculadora y no olvides tomar aguita :D <3");
             }
+            Console.ReadKey();
         }
     }
 }
