@@ -23,7 +23,6 @@ namespace Practicados
                 Console.WriteLine("(-) Resta");
                 Console.WriteLine("(*) Multiplicar");
                 Console.WriteLine("(/) Dividir");
-                Console.WriteLine("(r) Usar resultado anterior");
                 op = Console.ReadLine();
 
                 switch (op)
