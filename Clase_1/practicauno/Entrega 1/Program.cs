@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Entrega_1
+namespace Entrega1
 {
     class Program
     {
@@ -26,12 +26,11 @@ namespace Entrega_1
                 {
                     case "a":
                         Console.WriteLine("Hola, ¿Cual es tu nombre?");
-                        Console.ReadLine();
+                        nombre = Console.ReadLine();
                         if (nombre == "Manuel")
                         {
                             Console.WriteLine("Hola Manuel");
-                        }
-                        else
+                        }else
                         {
                             Console.WriteLine("User unauthorized");
                         }
