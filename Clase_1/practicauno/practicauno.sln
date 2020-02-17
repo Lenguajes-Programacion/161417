@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "practicauno", "practicauno\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicados", "Practicados\Practicados.csproj", "{EF2556D6-E229-4747-8D92-42588425F2E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entrega 1", "Entrega 1\Entrega 1.csproj", "{9F787044-8FF5-4748-A15C-6A2495E18E63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entrega1", "Entrega 1\Entrega1.csproj", "{9F787044-8FF5-4748-A15C-6A2495E18E63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
