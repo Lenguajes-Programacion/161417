@@ -7,7 +7,7 @@ namespace Entrega_1
         static string nombre = "Manuel";
         static void Main(string[] args)
         {
-            string opc, op;
+            string opc, op;            
             string close = null;
             string resant = null;
             string salir = null;
