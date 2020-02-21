@@ -20,10 +20,10 @@ namespace Practicados
             //var result = dbObject["arreglo"][0].ToString();//Carga lo que esta en el arreglo en el nivel 0
 
             //Lectura de nuestro json iterable
-            foreach (var item in result)//item=grupo de memoria
+            foreach (var item in dbObject)//item=grupo de memoria
             {
                 Console.WriteLine("Dato en memoria:");
-                Console.WriteLine(result);
+                Console.WriteLine(result.ToString());
             }
         }
     }
