@@ -23,6 +23,7 @@ namespace Practicados
                 Console.WriteLine("(-) Resta");
                 Console.WriteLine("(*) Multiplicar");
                 Console.WriteLine("(/) Dividir");
+                Console.WriteLine("(m) Memoria");
                 op = Console.ReadLine();
 
                 switch (op)
@@ -108,6 +109,10 @@ namespace Practicados
                         val1 = int.Parse(Console.ReadLine());
                         resdiv = val1 / resdiv;
                         Console.WriteLine(resdiv);
+                        break;
+                    case "m":
+                        Class1 memo = new Class1();
+                        memo.LeerMemoria();
                         break;
                 }
                 Console.WriteLine("Desea volver a usar la calculadora?");
