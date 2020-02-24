@@ -111,7 +111,7 @@ namespace Practicados
                         Console.WriteLine(resdiv);
                         break;
                     case "m":
-                        Class1 memo = new Class1();
+                        Memoria memo = new Memoria();
                         memo.LeerMemoria();
                         break;
                 }
