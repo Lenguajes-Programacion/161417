@@ -24,8 +24,12 @@ namespace Practicados
             {
                 Console.WriteLine("Dato en memoria:");
                 MemoriaData memoriaData = new MemoriaData(DateTime.Now,item["operacion"].ToString(),(int) item["resultado"]);
-                Console.WriteLine(key.ToString());
-                Console.WriteLine(memoriaData.resultado.ToString());
+                Console.WriteLine("Fecha:");
+                Console.WriteLine(key.ToString());//Fecha
+                Console.WriteLine("Operacion a hacer:");
+                Console.WriteLine(memoriaData.operacion);//Operacion
+                Console.WriteLine("Resultado:");
+                Console.WriteLine(memoriaData.resultado.ToString());//Resultado
             }
         }
     }
