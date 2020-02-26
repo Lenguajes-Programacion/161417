@@ -22,6 +22,7 @@ namespace Practicados
             //Lectura de nuestro json iterable
             foreach ((var key,var item) in dbObject)//item=grupo de memoria
             {
+                Console.WriteLine("-----------------");
                 Console.WriteLine("Dato en memoria:");
                 MemoriaData memoriaData = new MemoriaData(DateTime.Now,item["operacion"].ToString(),(int) item["resultado"]);
                 Console.WriteLine("Fecha:");
@@ -30,6 +31,7 @@ namespace Practicados
                 Console.WriteLine(memoriaData.operacion);//Operacion
                 Console.WriteLine("Resultado:");
                 Console.WriteLine(memoriaData.resultado.ToString());//Resultado
+
             }
         }
     }
