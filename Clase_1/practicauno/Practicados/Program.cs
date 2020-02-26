@@ -111,9 +111,14 @@ namespace Practicados
                         Console.WriteLine(resdiv);
                         break;
                     case "m":
+                        Console.WriteLine("Accediento a memoria");
                         Memoria memo = new Memoria();
                         memo.LeerMemoria();
                         break;
+                        //Elegir la opcion de resultado en nuestra memoria y utilizar el resultado en alguna operacion.
+                        //1.- Crear metodo que nos regrese el resultado seleccionado.
+                        //2.- Utilizar el resultado en nuna nueva operacion.
+                        //3.- Guardar la nueva operacion en nuestra db.json.
                 }
                 Console.WriteLine("Desea volver a usar la calculadora?");
                 close = Console.ReadLine();
