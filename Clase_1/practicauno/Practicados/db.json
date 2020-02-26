@@ -15,12 +15,12 @@
 		"resultado": 10
 	},//Multidimencional"
 	"2020-02-20":{
-		"operacion": "5+5",
-		"resultado": 10
+		"operacion": "5-5",
+		"resultado": 0
 	},
 	"2020-02-19":{
-		"operacion": "5+5",
-		"resultado": 10
+		"operacion": "5*5",
+		"resultado": 25
 	},
 }
 //Hay que tener un Key-Indice
