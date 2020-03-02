@@ -8,6 +8,11 @@ namespace Practicados
 {
     class Memoria
     {
+        public List<MemoriaData> db = new List<MemoriaData>();
+        public Memoria()
+        {
+            db = new List<MemoriaData>();
+        }
         public void LeerMemoria()
         {
             string archivoDB = "../../../db.json";//Ubicación del archivo
@@ -34,6 +39,12 @@ namespace Practicados
 
             }
         }
+        public int GetMemoriaData(String key)
+        {
+            int index = int.Parse(key);
+            MemoriaData data = db[index];
+            return data.resultado;
+        }
     }
     class MemoriaData
     {
@@ -49,4 +60,3 @@ namespace Practicados
     }
 
 }
-//Agregar formato a la fecha, tipo de operacion y resultado
