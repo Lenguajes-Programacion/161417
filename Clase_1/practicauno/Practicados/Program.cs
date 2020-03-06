@@ -10,6 +10,7 @@ namespace Practicados
         //Responder resultado en (int)
         static void Main(string[] args)
         {
+            Memoria memoria = new Memoria();
             string close = null;
             string resant = null;
             int val1, val2,res;
@@ -112,8 +113,8 @@ namespace Practicados
                         break;
                     case "m":
                         Console.WriteLine("Accediento a memoria");
-                        Memoria memo = new Memoria();
-                        memo.LeerMemoria();
+                        //memoria.LeerMemoria();
+                        memoria.arreglo();
                         break;
                         //Elegir la opcion de resultado en nuestra memoria y utilizar el resultado en alguna operacion.
                         //1.- Crear metodo que nos regrese el resultado seleccionado.
