@@ -1,6 +1,6 @@
 //Maneja objetos
 //Puede haber un Json dentro de otro Json
-{//Nivel 1
+[//Nivel 1
 	//"key": "Value",
 	/*"arreglo":[
 		{//"Indice 0"
@@ -10,18 +10,21 @@
 		},
 		"Value"
 	],*/
-	"2020-02-21":{//Indice, Nivel 2
+	{//Indice, Nivel 2
+		"Fecha": "2020-02-21",
 		"operacion": "5+5",
 		"resultado": 10
 	},//Multidimencional"
-	"2020-02-20":{
+	{
+		"Fecha": "2020-02-20",
 		"operacion": "5-5",
 		"resultado": 0
 	},
-	"2020-02-19":{
+	{
+		"Fecha": "2020-02-19",
 		"operacion": "5*5",
 		"resultado": 25
 	},
-}
+]
 //Hay que tener un Key-Indice
 //Una estructura de Key: "Value"
