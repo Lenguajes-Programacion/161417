@@ -45,6 +45,30 @@ namespace Practicados
             MemoriaData data = db[index];
             return data.resultado;
         }
+        public void arreglo()
+        {
+            string[] Colores = { "Rojo", "Blanco", "Morado" };
+            /*List<string> colores = ["Rojo", "Blanco", "Morado"];
+            colores.Sort();*/
+            Array.Sort(Colores);
+            Array.ForEach(Colores, (item) => {
+                Console.WriteLine(item);
+            });
+            String color = Array.Find(Colores, (item) =>
+            {
+                return item.Length > 4;
+            });
+            Console.WriteLine(color);
+            Console.WriteLine("Accede a tus colores y separalos con coma (,)");
+            String colorUser = Console.ReadLine();
+            string[] newColors = colorUser.Split(' ');
+            Console.WriteLine(newColors);//Nuevo arreglo "newColors"
+        }
+        public void multidimencional()
+        {
+            int[,] array = new int[4, 2];
+            Console.WriteLine(array);
+        }
     }
     class MemoriaData
     {
