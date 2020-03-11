@@ -64,10 +64,65 @@ namespace Practicados
             string[] newColors = colorUser.Split(' ');
             Console.WriteLine(newColors);//Nuevo arreglo "newColors"
         }
-        public void multidimencional()
+        //public void multidimencional()
+        static void Main()
         {
-            int[,] array = new int[4, 2];
-            Console.WriteLine(array);
+            bool salir = false;
+            while (!salir)
+            {
+                /*int[,] array = new int[4, 2];
+                Console.WriteLine(array);*/
+                Console.WriteLine("Arreglo sencillo");
+                string[]sencillo = { "Rojo", "Blanco", "Morado" };
+                Console.WriteLine("[{0}]", string.Join(",", sencillo));
+                Console.WriteLine("Arreglo 2 Dimesiones");
+                int[,] dosDimensiones = new int[5, 5];
+                for(int i =0; i< dosDimensiones.GetLength(0); i++)
+                {
+                    for(int j = 0; j < dosDimensiones.GetLength(1); j++)
+                    {
+                        dosDimensiones[i, j] = i + j;
+                        Console.WriteLine("{0},{1}={2}", i, j, dosDimensiones[i, j]);
+                    }
+                }
+                Console.WriteLine("[{0}]", string.Join(",", dosDimensiones));
+                Console.WriteLine("Arreglo 3 Dimesiones");
+                int[,,] tresDimensiones = new int[5, 5, 5];
+                for (int i = 0; i < dosDimensiones.GetLength(0); i++)
+                {
+                    for (int j = 0; j < tresDimensiones.GetLength(1); j++)
+                    {
+                        for(int k = 0; k < tresDimensiones.GetLength(2); k++)
+                        {
+                            tresDimensiones[i, j, k] = i + j + k;
+                            Console.WriteLine("{0},{1},{2}={3}", i, j,k, tresDimensiones[i, j, k]);
+                        }
+                    }
+                }
+                Console.WriteLine("[{0}]", string.Join(",", tresDimensiones));
+                Console.WriteLine("Arreglo 4 Dimesiones");
+                int[,,,] cuatroDimensiones = new int[5, 5, 5, 5];
+                for (int i = 0; i < cuatroDimensiones.GetLength(0); i++)
+                {
+                    for (int j = 0; j < cuatroDimensiones.GetLength(1); j++)
+                    {
+                        for (int k = 0; k < cuatroDimensiones.GetLength(2); k++)
+                        {
+                            for (int m = 0; m < cuatroDimensiones.GetLength(3); m++)
+                            {
+                                cuatroDimensiones[i, j, k, m] = i + j + k + m;
+                                Console.WriteLine("{0},{1},{2},{3}={4}", i, j, k,m, cuatroDimensiones[i, j, k, m]);
+                            }
+                        }
+                    }
+                }
+                string exit = Console.ReadLine();
+                if(exit == "y")
+                {
+                    salir = true;
+                }
+
+            }
         }
     }
     class MemoriaData
