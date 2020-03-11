@@ -8,7 +8,9 @@ namespace Practicados
         //Se espera recivir 2 argumentos valor1 (Int), valor2 (String) operador
         //valor3 (int)
         //Responder resultado en (int)
-        static void Main(string[] args)
+
+        //static void Main(string[] args)
+        static void calc(string[] args)
         {
             Memoria memoria = new Memoria();
             string close = null;
