@@ -23,20 +23,21 @@ namespace Practicados
             //var result = dbObject.ToString();
             //var result = dbObject["arreglo"].ToString();//Carga lo que esta en el arreglo
             //var result = dbObject["arreglo"][0].ToString();//Carga lo que esta en el arreglo en el nivel 0
-
+            int i= 0;
             //Lectura de nuestro json iterable
             foreach ((var key,var item) in dbObject)//item=grupo de memoria
-            {
+            {   
                 Console.WriteLine("-----------------");
                 Console.WriteLine("Dato en memoria:");
                 MemoriaData memoriaData = new MemoriaData(DateTime.Now,item["operacion"].ToString(),(int) item["resultado"]);
+                this.db.Add(memoriaData);
                 Console.WriteLine("Fecha:");
                 Console.WriteLine(key.ToString());//Fecha
                 Console.WriteLine("Operacion a hacer:");
                 Console.WriteLine(memoriaData.operacion);//Operacion
                 Console.WriteLine("Resultado:");
                 Console.WriteLine(memoriaData.resultado.ToString());//Resultado
-
+                i++;
             }
         }
         public int GetMemoriaData(String key)
@@ -44,6 +45,12 @@ namespace Practicados
             int index = int.Parse(key);
             MemoriaData data = db[index];
             return data.resultado;
+        }
+        public void GetMemoriaData(MemoriaData data)
+        {
+            db.Add(data);
+            int i= 0;
+            db.
         }
         public void arreglo()
         {
