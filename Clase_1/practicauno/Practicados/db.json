@@ -1,7 +1,7 @@
 //Maneja objetos
 //Puede haber un Json dentro de otro Json
 [//Nivel 1
-	//"key": "Value",
+	//"key": "Value",s
 	/*"arreglo":[
 		{//"Indice 0"
 			"operación": "5+5",
