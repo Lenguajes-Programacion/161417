@@ -60,7 +60,7 @@ namespace Practicados
                 Console.WriteLine("-----------\n");
                 i++;
             });
-            string json = JsonConvert.SeriaLizeObject(db.ToArray(), formatting.Indented);
+            string json = JsonConvert.SerializeObject(db.ToArray(), Formatting.Indented);
             string archivoDB = "../../../db.json";
             File.WriteAllText(archivoDB, json);
         }
