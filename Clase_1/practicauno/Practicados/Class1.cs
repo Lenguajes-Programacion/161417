@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -50,7 +51,18 @@ namespace Practicados
         {
             db.Add(data);
             int i= 0;
-            db.
+            db.ForEach((MemoriaData memoriadata) =>
+            {
+                Console.WriteLine("Dato en memoria: ({0})", i);
+                Console.WriteLine("{0} - {1}", memoriadata.fecha.ToLongDateString(),memoriadata.fecha.ToLongTimeString());
+                Console.WriteLine("Operacion: {0}", memoriadata.operacion);
+                Console.WriteLine("Resultado: {0}", memoriadata.resultado.ToString());
+                Console.WriteLine("-----------\n");
+                i++;
+            });
+            string json = JsonConvert.SeriaLizeObject(db.ToArray(), formatting.Indented);
+            string archivoDB = "../../../db.json";
+            File.WriteAllText(archivoDB, json);
         }
         public void arreglo()
         {
