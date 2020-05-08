@@ -132,4 +132,43 @@ namespace Practicados
             Console.ReadKey();
         }
     }
+    class calc
+    {
+        public int val1;
+        public int val2;
+
+        public static int suma(int val1,int val2)
+        {
+            int result = 0;
+            result = val1 + val2;
+            return result;
+        }
+        public static int resta(int val1, int val2)
+        {
+            int result = 0;
+            result = val1 - val2;
+            return result;
+        }
+        public static int multi(int val1, int val2)
+        {
+            int result = 0;
+            result = val1 * val2;
+            return result;
+        }
+        public static int div(int val1, int val2)
+        {
+            int result = 0;
+            result = val1 / val2;
+            return result;
+        }
+    }
+    class Newcalc : calc
+    {
+        public void raiz(int val1, int raiz)
+        {
+            int result = 0;
+            result = val1 ^ val1;
+            return result;
+        }
+    }
 }
