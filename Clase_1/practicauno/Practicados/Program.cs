@@ -167,7 +167,7 @@ namespace Practicados
         public void raiz(int val1, int raiz)
         {
             int result = 0;
-            result = val1 ^ val1;
+            result = val1 ^ 2;
             return result;
         }
     }
