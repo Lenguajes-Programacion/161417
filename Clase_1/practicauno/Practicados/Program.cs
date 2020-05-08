@@ -164,7 +164,7 @@ namespace Practicados
     }
     class Newcalc : calc
     {
-        public void raiz(int val1, int raiz)
+        public void potencia(int val1, int raiz)
         {
             int result = 0;
             result = val1 ^ 2;
