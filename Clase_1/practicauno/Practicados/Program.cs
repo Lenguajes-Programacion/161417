@@ -170,5 +170,5 @@ namespace Practicados
             result = val1 ^ 2;
             return result;
         }
-    }
+    }   
 }
